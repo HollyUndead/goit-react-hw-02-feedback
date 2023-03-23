@@ -3,7 +3,8 @@ const { Component } = require("react");
 export class FeedbackOptions extends Component{
     constructor(props){
         super(props)
-        this.propsFunc = this.props.increseFeedback
+        const {increseFeedback} = this.props
+        this.increseFeedback = increseFeedback
     }
     render(){
         return (

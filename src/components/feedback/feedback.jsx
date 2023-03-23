@@ -5,11 +5,7 @@ import { FeedbackOptions } from "./FeedbackOptions";
 
 export class Feedback extends Component {
     static defaultProps = {};
-
-    static propTypes = {};
-
     
-
     increseFeedback = (ev) => {
         let parametr = ev.target.name
         if(parametr !== undefined){

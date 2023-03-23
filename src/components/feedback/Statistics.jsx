@@ -2,8 +2,6 @@ const { Component } = require("react");
 
 
 export class Statistics extends Component {
-    state = {}
-    
     constructor(props){
         super(props)
         this.state = props.state
