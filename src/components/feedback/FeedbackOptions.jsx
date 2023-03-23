@@ -8,7 +8,7 @@ export class FeedbackOptions extends Component{
     }
     render(){
         return (
-            <div className="button-wrap" onClick={this.propsFunc}>
+            <div className="button-wrap" onClick={this.increseFeedback}>
                 <button name="good" >Good</button>
                 <button name="bad" >Bad</button>
                 <button name="neutral" >Neutral</button>
