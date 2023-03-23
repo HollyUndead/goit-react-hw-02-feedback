@@ -1,11 +1,8 @@
+import PropTypes from 'prop-types';
 const { Component } = require("react");
 
 
 export class Statistics extends Component {
-    constructor(props){
-        super(props)
-        this.state = props.state
-    }
 
     render() {
         const {good, bad, neutral, total, percentage} = this.props.state
@@ -29,4 +26,8 @@ export class Statistics extends Component {
             </section>
         )
     }
+}
+
+Statistics.propTypes = {
+    state: PropTypes.object,
 }
