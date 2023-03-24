@@ -5,10 +5,10 @@ const { Component } = require("react");
 export class Statistics extends Component {
 
     render() {
-        const {good, bad, neutral, total, percentage} = this.props.state
+        const {good, bad, neutral, total, percentage} = this.props
 
 
-        if(good===0 && bad === 0 && neutral === 0){
+        if(total === 0){
             return(
                 <section className="parag-wrap">
                     <p>There is no feedback</p>
@@ -29,5 +29,9 @@ export class Statistics extends Component {
 }
 
 Statistics.propTypes = {
-    state: PropTypes.object,
+    good: PropTypes.number,
+    bad: PropTypes.number,
+    neutral: PropTypes.number,
+    percentage: PropTypes.number,
+    total: PropTypes.number,
 }
